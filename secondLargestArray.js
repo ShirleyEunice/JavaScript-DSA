@@ -4,6 +4,11 @@ Think about these edge cases too:
 [10]
 [-5, -1, -10]
 [100, 90]
+*
+Initially set largest and secondLargest as -Infinity.
+Case 1: num > largest, then secondLargest becomes the old largest, largest becomes num\
+Case 2: If the number is smaller than largest but bigger than secondLargest. Update only secondLargest.
+Case 3: If the number is equal to the largest, do nothing.This prevents duplicates.
 */
 
 function secondLargest(arr){
