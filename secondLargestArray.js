@@ -9,6 +9,11 @@ Initially set largest and secondLargest as -Infinity.
 Case 1: num > largest, then secondLargest becomes the old largest, largest becomes num\
 Case 2: If the number is smaller than largest but bigger than secondLargest. Update only secondLargest.
 Case 3: If the number is equal to the largest, do nothing.This prevents duplicates.
+
+Interview Tip:
+This solution traverses the array once, so the time complexity is O(n). 
+It uses only two variables, so the space complexity is O(1). 
+It also correctly handles duplicate values by ensuring the second largest value is unique.
 */
 
 function secondLargest(arr){
